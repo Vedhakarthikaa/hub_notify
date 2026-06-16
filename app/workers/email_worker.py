@@ -24,7 +24,7 @@ def enqueue(job: Job) -> None:
 
 
 async def _process(job: Job) -> None:
-    
+    raise Exception("TEST RETRY FAILURE")
     print(
         f"EMAIL WORKER PROCESSING: {job.job_id}"
     )

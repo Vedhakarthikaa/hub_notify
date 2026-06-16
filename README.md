@@ -286,7 +286,8 @@ async def send_email(to: str, subject: str, body: str, html: str = None):
         port=settings.SMTP_PORT,
         username=settings.SMTP_USERNAME,
         password=settings.SMTP_PASSWORD,
-        use_tls=True,
+        use_tls=False,
+        start_tls=True,
     )
 ```
 
